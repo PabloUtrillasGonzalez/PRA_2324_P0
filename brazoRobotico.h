@@ -4,22 +4,19 @@ class BrazoRobotico{
 		int sujObj;
 
 	public:
-	void brazoRobotico(){}
+		BrazoRobotico();
 
-	int getX(){}
+		double getX();
 
-	int getY(){}
+		double getY();
 
-	int getZ(){}
+		double getZ();
 
-	int getsubObj(){}
+		int getsubObj();
 
-	void coger(){}
+		void coger();
 
-	void soltar(){}
+		void soltar();
 
-	void mover(double valX,double valY,double valZ){}
-}
-
-
-
+		void mover(double valX,double valY,double valZ);
+};

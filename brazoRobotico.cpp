@@ -1,44 +1,36 @@
 #include <iostream>
-#include <brazoRobotico.h>
+#include "brazoRobotico.h"
 
 
-class BrazoRobotico{
-	private:
-		double x,y,z;
-		int sujObj;
-
-
-	brazoRobotico(){
-		subObj = 0;
+	BrazoRobotico::BrazoRobotico(){
+		sujObj = 0;
 		x = 0.0;
 		y = 0.0;
 		z = 0.0;
 	}
 
 
-	int getX(){return x;}
+	double BrazoRobotico::getX(){return x;}
 
-	int getY(){return y;}
+	double BrazoRobotico::getY(){return y;}
 
-	int getZ(){return z;}
+	double BrazoRobotico::getZ(){return z;}
 
-	int getsubObj(){return subObj;}
+	int BrazoRobotico::getsubObj(){return sujObj;}
 
-	void coger(){
+	void BrazoRobotico::coger(){
 		sujObj = 1;
 	}
 
-	void soltar(){
+	void BrazoRobotico::soltar(){
 		sujObj = 0;
 	}
 
-	void mover(double valX,double valY,double valZ){
+	void BrazoRobotico::mover(double valX,double valY,double valZ){
 		x = valX;
 		y = valY;
 		z = valZ;
 	}
-
-}
 
 
 
