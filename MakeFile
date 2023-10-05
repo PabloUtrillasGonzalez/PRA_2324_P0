@@ -1,0 +1,16 @@
+all:	salida
+
+salida:	main.o	brazoRobotico.o
+	g++	main.o	brazoRobotico.o	-o	salida
+
+main.o:	main.cpp
+	g++	-c	main.cpp
+
+brazoRobotico.o:	brazoRobotico.cpp	brazoRobotico.h
+	g++	-c	brazoRobotico.cpp
+
+clean:
+	rm	*.o	salida
+
+test:	all
+	./salida
